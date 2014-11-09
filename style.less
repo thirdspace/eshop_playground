@@ -2,6 +2,7 @@
 /*** Brand Colors ***/
 @deep-purple: #0F0935;
 @transparent-purple:  rgba(15, 9, 53, 0.8);
+@dark-grey: #d8d8d8;
 
 /*** Base Mixins ***/
 /*** Font Sizes ***/
@@ -13,7 +14,6 @@ h1,h2,h3 {
   color: white !important;
 }
 p, li, a {
-  color: white !important;
   font-family: "nimbus-sans", helvetica, arial, sans-serif;
 }
 h1 {
@@ -89,6 +89,7 @@ header {
     font-size: .9em;
     li {
       list-style: none;
+      color: white;
       display: inline;
       padding: 20px 10px !important;
       font-weight: 100;
@@ -100,23 +101,35 @@ header {
   background: white;
   overflow: hidden;
   padding: 0px !important;
-}
-.btn-like, .btn-preview {
-  float: right;
-  background: none;
-  height: 30px;
-  width: 30px;
-  border: none;
+  }
+  .col-md-4 {
+    width: 30% !important;
+    margin-right: 3.3% !important;
+  }
+  .btn-like, .btn-preview {
+    float: right;
+    background: none;
+    height: 30px;
+    width: 30px;
+    border: none;
+    display: block;
+    z-index: 100;
   p {
     display: none;
   }
-  .btn-like {
-    background-image: url('images/icons/eye.svg') no-repeat;
+}
+.info {
+  padding: 10px;
+}
+.info h2, p.cost {
+    color: @dark-grey !important;
+  }
+ .btn-like {
+    background: url('images/icons/eye.svg') no-repeat;
   }
   .btn-preview {
-    background-image: url('images/icons/heart.svg') no-repeat;
+    background: url('images/icons/heart.svg') no-repeat;
   }
-}
 /***  /Structure ***/
 
 /*** Custom Fonts ***/

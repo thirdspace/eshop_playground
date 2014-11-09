@@ -11,7 +11,6 @@ h3 {
 p,
 li,
 a {
-  color: white !important;
   font-family: "nimbus-sans", helvetica, arial, sans-serif;
 }
 h1 {
@@ -86,6 +85,7 @@ header ul {
 }
 header ul li {
   list-style: none;
+  color: white;
   display: inline;
   padding: 20px 10px !important;
   font-weight: 100;
@@ -96,6 +96,10 @@ header ul li {
   overflow: hidden;
   padding: 0px !important;
 }
+.col-md-4 {
+  width: 30% !important;
+  margin-right: 3.3% !important;
+}
 .btn-like,
 .btn-preview {
   float: right;
@@ -103,18 +107,25 @@ header ul li {
   height: 30px;
   width: 30px;
   border: none;
+  display: block;
+  z-index: 100;
 }
 .btn-like p,
 .btn-preview p {
   display: none;
 }
-.btn-like .btn-like,
-.btn-preview .btn-like {
-  background-image: url('images/icons/eye.svg') no-repeat;
+.info {
+  padding: 10px;
 }
-.btn-like .btn-preview,
-.btn-preview .btn-preview {
-  background-image: url('images/icons/heart.svg') no-repeat;
+.info h2,
+p.cost {
+  color: #d8d8d8 !important;
+}
+.btn-like {
+  background: url('images/icons/eye.svg') no-repeat;
+}
+.btn-preview {
+  background: url('images/icons/heart.svg') no-repeat;
 }
 /***  /Structure ***/
 /*** Custom Fonts ***/
