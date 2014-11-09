@@ -1,6 +1,7 @@
 
 /*** Brand Colors ***/
 @deep-purple: #0F0935;
+@transparent-purple:  rgba(15, 9, 53, 0.8);
 
 /*** Base Mixins ***/
 /*** Font Sizes ***/
@@ -25,14 +26,29 @@ h1 {
 /*** Structure ***/
 body {
   background: @deep-purple;
+  position: relative;
 }
 /*Logobox*/
 .logobox {
   background: url(images/logobg.png) no-repeat;
-  background-position: 0px, 0px !important;
+  background-position: 0px 20px 20px 0px !important;
   background-size: 100% 70% !important;
   padding: 20px 0px 25px 20px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 500;
 }
+ .logobox:before {
+      content: '';
+      background-image: url('images/icons/music.svg');
+      color: white;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 25px;
+      top: 10px;
+      z-index: 200;
+    }
 header h1 {
    font-size: 3em;
    margin-left: 70px;
@@ -49,17 +65,57 @@ header h2 {
 }
 .psybg {
   width: 100%;
-  height: 40%;
-  z-index: 0;
-  position: absolute:
+  height: 300px; /* DESKTOP ONLY */
+  z-index: -10;
+  position: absolute;
   left: 0;
   top: 0;
-  background: url(images/background.jpg) no-repeat;
-   background: url(images/bg.png) no-repeat center center fixed;
+  background: url('images/background.jpg')  no-repeat center center fixed;
+  background-position-y: -150px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+/*Main Nav*/
+header {
+  ul {
+    background-color: @transparent-purple;
+    float: right;
+    margin-top: 40px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .9em;
+    li {
+      list-style: none;
+      display: inline;
+      padding: 20px 10px !important;
+      font-weight: 100;
+    }
+  }  
+}
+/*Product*/
+.product {
+  background: white;
+  overflow: hidden;
+  padding: 0px !important;
+}
+.btn-like, .btn-preview {
+  float: right;
+  background: none;
+  height: 30px;
+  width: 30px;
+  border: none;
+  p {
+    display: none;
+  }
+  .btn-like {
+    background-image: url('images/icons/eye.svg') no-repeat;
+  }
+  .btn-preview {
+    background-image: url('images/icons/heart.svg') no-repeat;
+  }
 }
 /***  /Structure ***/
 

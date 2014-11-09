@@ -13,11 +13,11 @@
 	<script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
 		<script src="//use.typekit.net/zxz3jqg.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-	  	<script>
+	  	<script type="text/javascript">
 	  			//Hide and show nav-menu
 		   		$( document ).ready(function() {
-						$("#container").append("<div class="psybg"></div>");
-		   			});
+		   			/*Background Image*/
+					$("body").append("<div class='psybg'></div>");					
 		   		});
 	  	</script>
 </head>
@@ -27,7 +27,6 @@
 			<div class="col-md-12">
 				<header class="col-md-12">
 					<div class="logobox col-md-3">
-						<p>ICON</p>
 						<h1>Ps<span>y/</span>/Fi</h1>
 						<h2>Modern Psychedelic Clothing</h2>
 					</div><!--End Logobox-->
@@ -38,7 +37,27 @@
 						<li>Cart</li>
 					</ul>
 				</header>
-			</div><!-- End Bg_gallery -->
+				<div class="product col-md-4 col-sm-12">
+					<img class="img-responsive" src="images/product1.jpg" />
+					<h2>Sky Priest Button-up</h2>
+					<button class="btn-addCart">Add to Cart</button>
+					<div class="row">
+						<button class="btn-viewProd">View Product</button>
+						<button class="btn-preview"><a href="#" target="_self"><p>Preview</p></a></button>
+						<button class="btn-like"><a href="#" target="_self"><p>Like</p></a></button>
+					</div><!--End Row-->
+				</div>
+				<div class="product col-md-4 col-sm-12">
+					<img class="img-responsive" src="images/product2.jpg" />
+					<h2>Northern Eye Fitted Cap</h2>
+					<button class="btn-addcart">Add to Cart</button>
+				</div>
+				<div class="product col-md-4 col-sm-12">
+					<img class="img-responsive" src="images/product3.jpg" />
+					<h2>Space Future Tee</h2>
+					<button class="btn-addcart">Add to Cart</button>
+				</div>
+			</div><!-- End Body -->
 		</div><!-- End Row -->
 	</div><!--End Container-->
 </body>
