@@ -1,36 +1,77 @@
+
 /*** Brand Colors ***/
+@deep-purple: #0F0935;
+
 /*** Base Mixins ***/
 /*** Font Sizes ***/
 
 /*** Page Backgrounds ***/
-/*html {
-  background: url(images/bg.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
 
+/*** Type ***/
+h1,h2,h3 {
+  color: white !important;
+}
+p, li, a {
+  color: white !important;
+  font-family: "nimbus-sans", helvetica, arial, sans-serif;
+}
+h1 {
+  font-family: 'loadedregular' !important;
+}
 /*** Reusable ***/
 
 /*** /Reusable ***/
 
 /*** Structure ***/
-
+body {
+  background: @deep-purple;
+}
+/*Logobox*/
+.logobox {
+  background: url(images/logobg.png) no-repeat;
+  background-position: 0px, 0px !important;
+  background-size: 100% 70% !important;
+  padding: 20px 0px 25px 20px;
+}
+header h1 {
+   font-size: 3em;
+   margin-left: 70px;
+   margin-top: -20px;
+   span {
+    letter-spacing: -.2em;
+   }
+}
+header h2 {
+  font-size: .9em;
+  height: auto;
+  margin-left: 70px;
+  margin-top: -10px;
+}
+.psybg {
+  width: 100%;
+  height: 40%;
+  z-index: 0;
+  position: absolute:
+  left: 0;
+  top: 0;
+  background: url(images/background.jpg) no-repeat;
+   background: url(images/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /***  /Structure ***/
 
 /*** Custom Fonts ***/
 @font-face {
-  font-family: 'BakerSignetStdRegular';
-  src: url('fonts/bakersignetstd-webfont.eot');
-  src: url('fonts/bakersignetstd-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bakersignetstd-webfont.woff') format('woff'), url('fonts/bakersignetstd-webfont.ttf') format('truetype'), url('fonts/bakersignetstd-webfont.svg#BakerSignetStdRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'breezi_icon_setregular';
-  src: url('fonts/breezi_font-webfont-webfont.eot');
-  src: url('fonts/breezi_font-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/breezi_font-webfont-webfont.woff2') format('woff2'), url('fonts/breezi_font-webfont-webfont.woff') format('woff'), url('fonts/breezi_font-webfont-webfont.ttf') format('truetype'), url('fonts/breezi_font-webfont-webfont.svg#breezi_icon_setregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'loadedregular';
+    src: url('fonts/loaded-webfont.eot');
+    src: url('fonts/loaded-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/loaded-webfont.woff2') format('woff2'),
+         url('fonts/loaded-webfont.woff') format('woff'),
+         url('fonts/loaded-webfont.ttf') format('truetype'),
+         url('fonts/loaded-webfont.svg#loadedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
